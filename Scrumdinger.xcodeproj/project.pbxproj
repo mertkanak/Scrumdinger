@@ -8,11 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		A8D400C22B61603D00D7762F /* ScrumdingerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D400C12B61603D00D7762F /* ScrumdingerApp.swift */; };
-		A8D400C42B61603D00D7762F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D400C32B61603D00D7762F /* ContentView.swift */; };
+		A8D400C42B61603D00D7762F /* MeetingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D400C32B61603D00D7762F /* MeetingView.swift */; };
 		A8D400C62B61603F00D7762F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8D400C52B61603F00D7762F /* Assets.xcassets */; };
 		A8D400C92B61603F00D7762F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8D400C82B61603F00D7762F /* Preview Assets.xcassets */; };
 		A8D400CB2B61603F00D7762F /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D400CA2B61603F00D7762F /* Persistence.swift */; };
 		A8D400CE2B61603F00D7762F /* Scrumdinger.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A8D400CC2B61603F00D7762F /* Scrumdinger.xcdatamodeld */; };
+		A8D400D82B616C6600D7762F /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D400D72B616C6600D7762F /* Theme.swift */; };
+		A8D400DA2B616CD700D7762F /* DailyScrum.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D400D92B616CD700D7762F /* DailyScrum.swift */; };
+		A8D400DC2B616DE700D7762F /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D400DB2B616DE700D7762F /* CardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +26,9 @@
 		A8D400C82B61603F00D7762F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A8D400CA2B61603F00D7762F /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		A8D400CD2B61603F00D7762F /* Scrumdinger.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Scrumdinger.xcdatamodel; sourceTree = "<group>"; };
+		A8D400D72B616C6600D7762F /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		A8D400D92B616CD700D7762F /* DailyScrum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyScrum.swift; sourceTree = "<group>"; };
+		A8D400DB2B616DE700D7762F /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,12 +61,14 @@
 		A8D400C02B61603D00D7762F /* Scrumdinger */ = {
 			isa = PBXGroup;
 			children = (
+				A8D400D62B616C5700D7762F /* Models */,
 				A8D400C12B61603D00D7762F /* ScrumdingerApp.swift */,
 				A8D400C32B61603D00D7762F /* MeetingView.swift */,
 				A8D400C52B61603F00D7762F /* Assets.xcassets */,
 				A8D400CA2B61603F00D7762F /* Persistence.swift */,
 				A8D400CC2B61603F00D7762F /* Scrumdinger.xcdatamodeld */,
 				A8D400C72B61603F00D7762F /* Preview Content */,
+				A8D400DB2B616DE700D7762F /* CardView.swift */,
 			);
 			path = Scrumdinger;
 			sourceTree = "<group>";
@@ -71,6 +79,15 @@
 				A8D400C82B61603F00D7762F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A8D400D62B616C5700D7762F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A8D400D72B616C6600D7762F /* Theme.swift */,
+				A8D400D92B616CD700D7762F /* DailyScrum.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,9 +160,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8D400DC2B616DE700D7762F /* CardView.swift in Sources */,
 				A8D400CB2B61603F00D7762F /* Persistence.swift in Sources */,
 				A8D400C42B61603D00D7762F /* MeetingView.swift in Sources */,
+				A8D400D82B616C6600D7762F /* Theme.swift in Sources */,
 				A8D400C22B61603D00D7762F /* ScrumdingerApp.swift in Sources */,
+				A8D400DA2B616CD700D7762F /* DailyScrum.swift in Sources */,
 				A8D400CE2B61603F00D7762F /* Scrumdinger.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
