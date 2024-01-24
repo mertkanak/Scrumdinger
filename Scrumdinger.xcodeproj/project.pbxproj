@@ -18,7 +18,7 @@
 /* Begin PBXFileReference section */
 		A8D400BE2B61603D00D7762F /* Scrumdinger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Scrumdinger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8D400C12B61603D00D7762F /* ScrumdingerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumdingerApp.swift; sourceTree = "<group>"; };
-		A8D400C32B61603D00D7762F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A8D400C32B61603D00D7762F /* MeetingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingView.swift; sourceTree = "<group>"; };
 		A8D400C52B61603F00D7762F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A8D400C82B61603F00D7762F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A8D400CA2B61603F00D7762F /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -56,7 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				A8D400C12B61603D00D7762F /* ScrumdingerApp.swift */,
-				A8D400C32B61603D00D7762F /* ContentView.swift */,
+				A8D400C32B61603D00D7762F /* MeetingView.swift */,
 				A8D400C52B61603F00D7762F /* Assets.xcassets */,
 				A8D400CA2B61603F00D7762F /* Persistence.swift */,
 				A8D400CC2B61603F00D7762F /* Scrumdinger.xcdatamodeld */,
@@ -144,7 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A8D400CB2B61603F00D7762F /* Persistence.swift in Sources */,
-				A8D400C42B61603D00D7762F /* ContentView.swift in Sources */,
+				A8D400C42B61603D00D7762F /* MeetingView.swift in Sources */,
 				A8D400C22B61603D00D7762F /* ScrumdingerApp.swift in Sources */,
 				A8D400CE2B61603F00D7762F /* Scrumdinger.xcdatamodeld in Sources */,
 			);
