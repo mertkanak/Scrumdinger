@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+
 enum Theme: String {
     case bubblegum
     case buttercup
@@ -27,16 +28,14 @@ enum Theme: String {
     
     var accentColor: Color {
         switch self {
-        case .bubblegum, .buttercup, .lavender, .periwinkle, .seafoam, .sky, .tan, .teal, .yellow:
-            return Color("YourAccentColorNameForLightThemes") // Update with your actual color asset name
-        case .indigo, .magenta, .navy, .oxblood, .purple:
-            return Color("YourAccentColorNameForDarkThemes") // Update with your actual color asset name
-        case .orange, .poppy:
-            return Color("YourAccentColorNameForSpecificThemes") // Update with your actual color asset name
+        case .bubblegum, .buttercup, .lavender, .orange, .periwinkle, .poppy, .seafoam, .sky, .tan, .teal, .yellow: return .black
+        case .indigo, .magenta, .navy, .oxblood, .purple: return .white
         }
     }
-    
     var mainColor: Color {
-        return Color(rawValue)
+        Color(rawValue)
+    }
+    var name: String {
+        rawValue.capitalized
     }
 }
