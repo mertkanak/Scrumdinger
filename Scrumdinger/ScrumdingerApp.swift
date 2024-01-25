@@ -7,14 +7,12 @@
 
 import SwiftUI
 
+
 @main
 struct ScrumdingerApp: App {
-    let persistenceController = PersistenceController.shared
-
     var body: some Scene {
         WindowGroup {
-            MeetingView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+            ScrumsView(scrums: DailyScrum.sampleData)
         }
     }
 }
