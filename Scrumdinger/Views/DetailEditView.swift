@@ -9,7 +9,7 @@ import SwiftUI
 
 
 struct DetailEditView: View {
-    @State private var scrum = DailyScrum.emptyScrum
+    @Binding var scrum: DailyScrum
     @State private var newAttendeeName = ""
 
 
@@ -26,14 +26,15 @@ struct DetailEditView: View {
                     Text("\(scrum.lengthInMinutes) minutes")
                         .accessibilityHidden(true)
                 }
+                ThemePicker(selection: $scrum.theme)
             }
             Section(header: Text("Attendees")) {
-                ForEach(scrum.attendees) {attendee in
+                ForEach(scrum.attendees) { attendee in
                     Text(attendee.name)
                 }
-                .onDelete(perform: { indexSet in
-                    scrum.attendees.remove(atOffsets: indexSet)
-                })
+                .onDelete { indices in
+                    scrum.attendees.remove(atOffsets: indices)
+                }
                 HStack {
                     TextField("New Attendee", text: $newAttendeeName)
                     Button(action: {
@@ -44,7 +45,7 @@ struct DetailEditView: View {
                         }
                     }) {
                         Image(systemName: "plus.circle.fill")
-                        .accessibilityLabel("Add attendee")
+                            .accessibilityLabel("Add attendee")
                     }
                     .disabled(newAttendeeName.isEmpty)
                 }
